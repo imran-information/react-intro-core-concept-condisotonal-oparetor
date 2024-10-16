@@ -1,11 +1,32 @@
 import './App.css'
 import ToDo from './ToDo'
+import Actor from './Actor'
+import singers from './Singer';
+import Singers from './Singer';
 
 function App() {
+  const actors = ['Hasan', 'Probin', 'Gobindo', 'Lanchan', 'hablu', 'Kodom Ali'];
+
+  const singers = [
+    { name: 'Kodom Ali', age: 50, phoneNumber: '012454541545' },
+    { name: 'Badam Ali', age: 60, phoneNumber: '0165665656' },
+    { name: 'Kutub Ali', age: 40, phoneNumber: '0100000000' },
+    { name: 'Hasan Ali', age: 36, phoneNumber: '0170540054005' },
+    { name: 'Faruk Hossain', age: 45, phoneNumber: '06485456564' },
+  ]
+
   return (
     <>
 
       <h1>Vite + React</h1>
+      {
+        actors.map(actor => <Actor name={actor}> </Actor>)
+      }
+
+
+      {
+        singers.map(singer => <Singers singer={singer}></Singers>)
+      }
       <ToDo
         task="Learn React"
         isDone={true}>

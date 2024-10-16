@@ -47,7 +47,7 @@
 // }
 
 
-// conditional  rendering option: 4 logical || oparetor 
+// conditional  rendering option: 5 logical || oparetor 
 
 export default function ToDo({ task, isDone }) {
     return (
